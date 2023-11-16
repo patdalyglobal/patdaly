@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete {{ supervisor.name }}</title>
+</head>
+<body>
+    <h2>Delete {{ supervisor.name }}</h2>
+    <form method="post" action="{% url 'supervisor_delete' supervisor.pk %}">
+        {% csrf_token %}
+        <p>Are you sure you want to delete "{{ supervisor.name }}"?</p>
+        <button type="submit">Yes, delete</button>
+        <a href="{% url 'supervisor_detail' supervisor.pk %}">Cancel</a>
+    </form>
+</body>
+</html>

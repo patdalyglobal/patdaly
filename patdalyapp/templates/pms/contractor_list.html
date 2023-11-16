@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contractor List</title>
+</head>
+<body>
+    <h2>Contractor List</h2>
+    <ul>
+        {% for contractor in contractors %}
+            <li><a href="{% url 'contractor_detail' contractor.pk %}">{{ contractor.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'contractor_create' %}">Create Contractor</a>
+</body>
+</html>

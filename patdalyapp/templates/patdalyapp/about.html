@@ -1,0 +1,123 @@
+{% extends 'patdalyapp/base.html' %}
+{% load static %}
+
+{% block title %} Patdaly {% endblock %}
+
+{% block content %}
+
+<!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                <p>
+                    Patdaly Global Investment Nig <b>(PGIN)</b> is a versatile company dedicated to transforming key sectors in Nigeria. We provide a spectrum of services, including: With a primary focus on ICT consulting, we empower businesses with strategic guidance to harness the full potential of technology. Our mission is to elevate these industries, support local farmers, and contribute to the growth and success of the Nigerian market, all while ensuring lasting positive impacts for all stakeholders.
+                </p>
+                <ul>
+                    <li><i class="ri-check-double-line"></i> Agro Business solutions to enhance agricultural productivity,</li>
+                    <li><i class="ri-check-double-line"></i> ICT Services to drive technological advancement,</li>
+                    <li><i class="ri-check-double-line"></i> Hotel Services that prioritize exceptional hospitality.</li>
+                    <li><i class="ri-check-double-line"></i> With a primary focus on ICT consulting,</li>
+                </ul>
+                <p>
+                    We empower businesses with strategic guidance to harness the full potential of technology. Our mission is to elevate these industries, support local farmers, and contribute to the growth and success of the Nigerian market, all while ensuring lasting positive impacts for all stakeholders.
+                </p>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="image-block text-center">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'patdalyapp/assets/img/logo.png' %}" alt="" class="img-fluid">
+                    </a>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ======= Core Values ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>CORE VALUES</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 class="title"><a href="">Dedication</a></h4>
+              <p class="description">The company is dedicated to making a meaningful impact in key sectors of the Nigerian economy.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <h4 class="title"><a href="">Versatility</a></h4>
+              <p class="description">PGIN offers a broad spectrum of services, indicating adaptability and a commitment to addressing diverse needs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <h4 class="title"><a href="">Transformation</a></h4>
+              <p class="description">The company is focused on driving positive change and improvement in various sectors, particularly in agriculture, technology, and hospitality.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <h4 class="title"><a href="">Service Excellence</a></h4>
+              <p class="description">In its Agro Business and Hotel Services, the company emphasizes the delivery of high-quality and exceptional services.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 class="title"><a href="">Innovation</a></h4>
+              <p class="description">The emphasis on ICT Services and the aim to harness the full potential of technology suggests an innovative and forward-thinking approach.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <h4 class="title"><a href="">Empowerment</a></h4>
+              <p class="description">The company is dedicated to empowering businesses through ICT consulting, indicating a commitment to helping clients succeed.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <h4 class="title"><a href="">Support</a></h4>
+              <p class="description">PGIN is committed to supporting local farmers and contributing to the growth and success of the Nigerian market.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <h4 class="title"><a href="">Sustainability</a></h4>
+              <p class="description">The mention of "ensuring lasting positive impacts for all stakeholders" suggests a commitment to sustainability and long-term benefits.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+
+
+{% endblock %}

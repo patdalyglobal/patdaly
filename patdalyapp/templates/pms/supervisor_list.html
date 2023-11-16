@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supervisor List</title>
+</head>
+<body>
+    <h2>Supervisor List</h2>
+    <ul>
+        {% for supervisor in supervisors %}
+            <li><a href="{% url 'supervisor_detail' supervisor.pk %}">{{ supervisor.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'supervisor_create' %}">Create Supervisor</a>
+</body>
+</html>

@@ -1,0 +1,138 @@
+{% extends 'patdalyapp/base.html' %}
+{% load static %}
+
+{% block title %} Patdaly {% endblock %}
+
+{% block content %}
+
+  <main id="main">
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Web Apps</h2>
+          <p>Make your choice according to your need</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ngos">NGOs</li>
+              <li data-filter=".filter-schools">Schools</li>
+              <li data-filter=".filter-clinics">Clinics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-clinics">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/wholistic.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Religion</h4>
+                <p>Religion</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/wholistic.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Religion"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ngos">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/CBT-Training.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>CBTs</h4>
+                <p>Exam</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/CBT-Training.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="CBT EXAM"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-schools">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/ANAS-NIAS-Conference.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Conference & Meetings </h4>
+                <p>Schools</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/ANAS-NIAS-Conference.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Conference & Meeting"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-clinics">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/icon-university.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Schools</h4>
+                <p>Schools</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/icon-university.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Schools"><i class="bx bx-plus"></i></a>
+                  <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ngos">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/CyberOps-Training.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Professional</h4>
+                <p>Industry</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/CBT-Training.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Professionals for Industries"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-schools">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/Student-Defence.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Project</h4>
+                <p>Defence</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/Student-Defence.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Project Defence"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-clinics">
+            <div class="portfolio-wrap">
+              <img src="{% static 'patdalyapp/assets/img/portfolio/voba.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Schools</h4>
+                <p>Schools</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'patdalyapp/assets/img/portfolio/voba.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Education"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}
